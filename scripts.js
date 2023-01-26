@@ -13,10 +13,8 @@ function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.querySelector(".navlogoimg").style.height = "40px";
     document.querySelector(".navbar").style.height = "70px";
-    document.getElementById("logo").style.fontSize = "25px";
   } else {
     document.querySelector(".navlogoimg").style.height = "70px";
     document.querySelector(".navbar").style.height = "100px";
-    document.getElementById("logo").style.fontSize = "35px";
   }
 }
