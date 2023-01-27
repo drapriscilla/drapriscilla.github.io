@@ -597,7 +597,7 @@ html, body {
         display: flex !important;
         align-items: center !important;
         flex-direction: column !important;
-        padding-bottom: 30px !important;
+        padding-bottom: 18px !important;
         max-width: 400px !important;
     }
 
