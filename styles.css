@@ -9,6 +9,7 @@
 
 
 html, body {
+    width: 100%;
     margin: 0px;
     font-family: "Berlin", Helvetica, sans-serif;
     overflow-x: hidden;
@@ -101,6 +102,10 @@ html, body {
     z-index: -1;
     left: -770px;
 
+}
+
+.hero-main-image-mobile {
+    display: none;
 }
 
 .flower {
@@ -271,8 +276,12 @@ html, body {
     max-width: 900px;
     text-align: justify;
     text-justify: inter-word;
-    font-size: 2.15rem;
+    font-size: 1.75rem;
     color: #7F6C75;
+}
+
+.comments p{
+    margin-bottom: 10px;
 }
 
 #location-section {
@@ -401,4 +410,381 @@ html, body {
 
 #buscarHorariosDropdown {
     padding-top: 20px !important;
+}
+
+.whatsapp-surround {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.whatsapp-button {
+    color: white;
+    fill: white;
+    background-color: #25d366;
+    border-radius: 50%;
+    height: 70px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.35s;
+    box-shadow: 0px 15px 15px -3px rgba(0,0,0,0.1);
+}
+
+.whatsapp-button:hover, .whatsapp-button:focus {
+    background-color: #1fb957;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 800px) {
+    .hero-main-image {
+        display: none !important;
+    }
+
+    .hero-main-image-mobile {
+        position: relative;
+        display: block !important;
+        height: 400px;
+        margin-left: -60px;
+        z-index: -1;
+    }
+
+    #hero-main {
+        border-bottom: 25px solid #C0A5B5;
+    }
+
+    .main-text {
+        height: 140px !important;
+        position: absolute;
+        top: 300px;
+        left: 20px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 70%, rgba(1,2,5,0) 100%);
+        padding: 10px 5px;
+        border-radius: 5px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .smaller-navbar {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        box-shadow: 0px 0px 6px 3px #ECC1CA;
+    }
+
+
+    .placeholder {
+        padding-top: 83px;
+    }
+
+    .flower {
+        display: none !important;
+    }
+
+    .about-me-title {
+        width: 98% !important;
+        margin-left: 0px !important;
+        box-sizing: border-box;
+        color: #C0A5B5;
+        padding: 35px 0px 20px !important;
+    }
+
+    .specialty-bundle {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+
+    .each-specialty {
+        width: 100% !important;
+    }
+
+    .about-text, .postgrad-items {
+        font-size: 1.75rem;
+    }
+
+    .specialty-title, .about-me-title, .agendamento-title {
+        font-size: 3rem;
+    }
+
+    .about-services-info {
+        width: 90% !important;
+    }
+
+    .about-service-item {
+        gap: 8% !important;
+        text-align: start;
+    }
+
+    .about-services-title {
+        padding-top: 20px !important;
+    }
+
+    .footer-main {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+        margin: auto !important;
+    }
+
+    .footer-location {
+        padding-bottom: 20px !important;
+    }
+
+    .footer-contact {
+        margin: 0px !important;
+        padding-top: 10px !important;
+        border-top: 1px solid #7F6C75;
+    }
+
+    .footer-contact, .footer-location, .footer-logo {
+        width: 90% !important;
+    }
+
+    .footer-logo {
+        margin: 0px auto 20px !important;
+    }
+
+    .footer {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 20px 0px!important;
+        margin: auto !important;
+    }
+
+    .logoconcisa {
+        height: 109px;
+        margin-top: 12px;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 50% 0px 0px 50%;
+        box-shadow: 0px 0px 10px 1px #FFFF;
+    }
+    
+    .logocompletasurround {
+        background: rgb(255,255,255);
+        padding-top: 19px;
+        padding-bottom: 21px;
+        margin-left: 0px;
+        margin-top: 12px;
+        border: 1px solid white;
+        box-shadow: 0px 0px 2px 1px #FFFF;
+        border-radius: 0px 20px 20px 0px;
+    }
+    
+    .logocompleta {
+        height: 66px;
+        margin-top: 0px;
+    }
+
+    .whatsapp-surround {
+        bottom: 20px !important;
+        right: 20px !important;
+    }
+
+    .each-specialty {
+        display: flex !important;
+        align-items: center !important;
+        flex-direction: column !important;
+        padding-bottom: 30px !important;
+        max-width: 400px !important;
+    }
+
+    .spec-icon {
+        margin-right: 12px !important;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+    .specialty-bundle {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+
+
+    .each-specialty {
+        display: flex !important;
+        align-items: center !important;
+        flex-direction: column !important;
+        padding-bottom: 30px !important;
+        max-width: 400px !important;
+        width: 100% !important;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .smaller-navbar {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        box-shadow: 0px 0px 6px 3px #ECC1CA;
+    }
+
+
+    .placeholder {
+        padding-top: 83px;
+    }
+
+    .flower {
+        display: none !important;
+    }
+
+    .about-me-title {
+        width: 98% !important;
+        margin-left: 0px !important;
+        box-sizing: border-box;
+        color: #C0A5B5;
+        padding: 35px 0px 20px !important;
+    }
+
+
+}
+
+.smaller-navbar-surrounding {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding: 10px 0px;
+}
+
+.smaller-navbar {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+}
+
+.logo-mobile {
+    height: 50px;
+    width: auto;
+}
+
+.about-services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(244,244, 244);
+    width: 100%;
+}
+
+.about-services-title {
+    font-size: 2.5rem;
+    padding: 40px 0px 0px;
+    color: #c582aa;
+}
+
+.about-services-info {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 900px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.75rem;
+    padding: 40px 0px 0px;
+    color: #7F6C75;
+}
+
+.about-services-info-title {
+    width: 100%;
+    font-size: 2.15rem;
+    padding-bottom: 25px;
+}
+
+.about-service-item {
+    width: 96%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    border-top: 1px solid #C0A5B5;
+    padding: 20px 10px;
+}
+
+.about-service-content ul li {
+    margin-bottom: 5px;
+}
+
+#body-overlay {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.2);
+}
+.real-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 4;
+    width: 300px;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 6px 12px rgba(107, 82, 82, 0.3);
+    background-color: white;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: ease-in-out 0.3s all;
+}
+body.menu-open #body-overlay {
+    display: block;
+}
+body.menu-open .real-menu {
+    right: 0;
+}
+
+#open-menu {
+    border: 0px;
+    padding: 14px;
+    padding-top: 20px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: -10px;
+}
+
+#open-menu i {
+    fill: #c582aa;
+    color: #c582aa;
+    font-size: 2.3rem;
+}
+
+.real-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.realmenu-surround {
+    padding: 30px 20px;
+}
+
+.realmenu-items {
+    padding: 20px 0px 30px;
+    border-top: 1px solid #c582aa;
+    font-size: 2.1rem;
+}
+
+.realmenu-items a{
+    color: #c582aa;
+    text-decoration: none;
 }
