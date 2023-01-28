@@ -295,7 +295,8 @@ html, body {
 }
 
 .mapsurround {
-    width: auto;
+    width: 90%;
+    max-width: 900px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -441,16 +442,15 @@ html, body {
     background-color: #1fb957;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 800px) {
+@media only screen and (min-width: 0px) and (max-width: 369px) {
     .hero-main-image {
         display: none !important;
     }
-
     .hero-main-image-mobile {
         position: relative;
         display: block !important;
-        height: 400px;
-        margin-left: -60px;
+        height: 380px;
+        margin-left: -120px;
         z-index: -1;
     }
 
@@ -459,9 +459,9 @@ html, body {
     }
 
     .main-text {
-        height: 140px !important;
+        height: 110px !important;
         position: absolute;
-        top: 300px;
+        top: 330px;
         left: 20px;
         background: rgb(255,255,255);
         background: linear-gradient(90deg, rgba(255,255,255,1) 70%, rgba(1,2,5,0) 100%);
@@ -500,7 +500,7 @@ html, body {
 
     .specialty-bundle {
         flex-direction: column !important;
-        gap: 10px !important;
+        gap: 20px !important;
     }
 
     .each-specialty {
@@ -511,8 +511,12 @@ html, body {
         font-size: 1.75rem;
     }
 
-    .specialty-title, .about-me-title, .agendamento-title {
-        font-size: 3rem;
+    .specialty-title, .about-me-title, .agendamento-title, .location-title {
+        font-size: 3rem !important;
+    }
+
+    .specialty-title, .agendamento-title, .location-title {
+        margin-left: 20px !important;
     }
 
     .about-services-info {
@@ -597,6 +601,184 @@ html, body {
         display: flex !important;
         align-items: center !important;
         flex-direction: column !important;
+        max-width: 400px !important;
+    }
+
+    #gyn-icon {
+        margin-right: -20px !important;
+    }
+
+    #ob-icon {
+        margin-right: 44px !important;
+    }
+
+    .gyn-icon, .ob-icon {
+        height: 140px !important;
+        width: 100% !important;
+    }
+}
+
+@media only screen and (min-width: 370px) and (max-width: 800px) {
+    .hero-main-image {
+        display: none !important;
+    }
+
+    .hero-main-image-mobile {
+        position: relative;
+        display: block !important;
+        height: 400px;
+        margin-left: -60px;
+        z-index: -1;
+    }
+
+    #hero-main {
+        border-bottom: 25px solid #C0A5B5;
+    }
+
+    .about-services-title {
+        padding-top: 30px !important;
+    }
+
+    .main-text {
+        height: 140px !important;
+        position: absolute;
+        top: 300px;
+        left: 20px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 70%, rgba(1,2,5,0) 100%);
+        padding: 10px 5px;
+        border-radius: 5px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .smaller-navbar {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        box-shadow: 0px 0px 6px 3px #ECC1CA;
+    }
+
+
+    .placeholder {
+        padding-top: 83px;
+    }
+
+    .flower {
+        display: none !important;
+    }
+
+    .about-me-title {
+        width: 98% !important;
+        margin-left: 0px !important;
+        box-sizing: border-box;
+        color: #C0A5B5;
+        padding: 35px 0px 20px !important;
+    }
+
+    .specialty-bundle {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+
+    .each-specialty {
+        width: 100% !important;
+    }
+
+    .about-text, .postgrad-items {
+        font-size: 1.75rem;
+    }
+
+    .specialty-title, .about-me-title, .agendamento-title, .location-title {
+        font-size: 3rem !important;
+    }
+
+
+    .specialty-title, .agendamento-title, .location-title {
+        margin-left: 20px !important;
+    }
+
+    .about-services-info {
+        width: 90% !important;
+    }
+
+    .about-service-item {
+        gap: 8% !important;
+        text-align: start;
+    }
+
+    .footer-main {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+        margin: auto !important;
+    }
+
+    .footer-location {
+        padding-bottom: 20px !important;
+    }
+
+    .footer-contact {
+        margin: 0px !important;
+        padding-top: 10px !important;
+        border-top: 1px solid #7F6C75;
+    }
+
+    .footer-contact, .footer-location, .footer-logo {
+        width: 90% !important;
+    }
+
+    .footer-logo {
+        margin: 0px auto 20px !important;
+    }
+
+    .footer {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 20px 0px!important;
+        margin: auto !important;
+    }
+
+    .logoconcisa {
+        height: 109px;
+        margin-top: 12px;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 50% 0px 0px 50%;
+        box-shadow: 0px 0px 10px 1px #FFFF;
+    }
+    
+    .logocompletasurround {
+        background: rgb(255,255,255);
+        padding-top: 19px;
+        padding-bottom: 21px;
+        margin-left: 0px;
+        margin-top: 12px;
+        border: 1px solid white;
+        box-shadow: 0px 0px 2px 1px #FFFF;
+        border-radius: 0px 20px 20px 0px;
+    }
+    
+    .logocompleta {
+        height: 66px;
+        margin-top: 0px;
+    }
+
+    .whatsapp-surround {
+        bottom: 20px !important;
+        right: 20px !important;
+    }
+
+    .each-specialty {
+        display: flex !important;
+        align-items: center !important;
+        flex-direction: column !important;
         padding-bottom: 18px !important;
         max-width: 400px !important;
     }
@@ -606,7 +788,7 @@ html, body {
     }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1024px) {
+@media only screen and (min-width: 801px) and (max-width: 1024px) {
     .specialty-bundle {
         flex-direction: column !important;
         gap: 10px !important;
