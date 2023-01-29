@@ -356,6 +356,7 @@ text-decoration:none;
     flex-direction: row;
     margin-top: 18px;
     gap: 12px;
+    color: #7F6C75;
 }
 
 .footer-logo {
