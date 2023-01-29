@@ -359,6 +359,9 @@ text-decoration:none;
     color: #7F6C75;
 }
 
+.contact-description {
+    color: #7F6C75;
+}
 .footer-logo {
     display: flex;
     align-items: center;
